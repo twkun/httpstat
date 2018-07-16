@@ -2,6 +2,7 @@ language: go
 go_import_path: github.com/davecheney/httpstat
 go:
   - 1.10.x
+  - master
 
 os:
   - linux
@@ -14,8 +15,7 @@ addons:
 
 sudo: false
 
-install:
-  - echo "skipping travis' default go get -t -v to ensure we're only using vendor/ dependencies"
+install: true
 
 script:
   - go vet ./...
