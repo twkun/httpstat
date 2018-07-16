@@ -7,11 +7,7 @@ os:
   - linux
   - osx
 
-addons:
-  apt:
-    packages:
-    - dnsutils
-
+dist: trusty
 sudo: false
 
 install: true
